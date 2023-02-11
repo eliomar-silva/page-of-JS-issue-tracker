@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Issue Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="frame">
+    <header class="header">
+      <h1>Js IssueTracker <span>by Eliomar</span></h1>
+    </header>
+    <section id="section-form">
+      <h3>Add New Issue:</h3>
+      <form id="issueInputForm">
+        <div class="input-group">
+          <label for="inputDesc">Description</label>
+          <input type="text" id="inputDesc" placeholder="Describe the issue ...">
+        </div>
+        <div class="input-group">
+          <label for="severitySelect">Severity</label>
+          <select id="severitySelect">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="Medium">high</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="inputAssigned">Assigned To</label>
+          <input type="text" id="inputAssigned" placeholder="Enter responsible ...">
+        </div>
+        <button type="submit" class="btn btn-primary">Add</button>
+      </form>
+    </section>
+    <section id="section-list">
+      <div id="issuesList"></div>
+    </section>
+    <footer>
+      <p>&copy <a href="https://github.com/eliomar-silva">github.com/eliomar-silva</a></p>
+    </footer>
+  </div>
+</body>
+
+</html>
